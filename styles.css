@@ -89,11 +89,11 @@ img {
 .hero-frame {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(300px, 430px);
-  gap: clamp(28px, 5vw, 72px);
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 400px);
+  gap: clamp(24px, 4vw, 48px);
   min-height: calc(100vh - 58px);
   align-items: center;
-  padding: clamp(28px, 5vw, 72px);
+  padding: clamp(28px, 4vw, 56px);
   border: 0;
   background:
     linear-gradient(90deg, rgba(245, 240, 230, 0.98), rgba(245, 240, 230, 0.84)),
@@ -105,6 +105,7 @@ img {
 .hero-copy {
   position: relative;
   z-index: 1;
+  min-width: 0;
   text-align: center;
 }
 
@@ -127,9 +128,9 @@ h3 {
 }
 
 h1 {
-  max-width: 760px;
+  max-width: 100%;
   margin-inline: auto;
-  font-size: clamp(3.6rem, 9vw, 8.3rem);
+  font-size: clamp(3.4rem, 6vw, 5.7rem);
   text-transform: uppercase;
 }
 
@@ -143,7 +144,7 @@ h3 {
 }
 
 .subtitle {
-  max-width: 720px;
+  max-width: 620px;
   margin: 26px auto 0;
   color: var(--burgundy-rich);
   font-family: "Cormorant Garamond", Georgia, serif;
@@ -153,7 +154,7 @@ h3 {
 }
 
 .lead {
-  max-width: 700px;
+  max-width: 620px;
   margin: 26px auto 0;
   font-size: 1.08rem;
 }
@@ -161,6 +162,8 @@ h3 {
 .hero-portrait {
   position: relative;
   z-index: 1;
+  width: min(100%, 400px);
+  min-width: 0;
   margin: 0;
   padding: 14px;
   border: 1px solid var(--burgundy);
