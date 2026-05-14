@@ -80,10 +80,23 @@ img {
 }
 
 .hero {
+  position: relative;
   width: min(1180px, calc(100% - 32px));
   min-height: 100vh;
   margin: 0 auto;
   padding: 0 0 58px;
+}
+
+.author-label {
+  position: absolute;
+  top: 22px;
+  left: 0;
+  z-index: 3;
+  margin: 0;
+  color: var(--burgundy-dark);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(1.1rem, 1.7vw, 1.45rem);
+  font-weight: 700;
 }
 
 .hero-frame {
